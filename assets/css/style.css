@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+:root{
+    --bg-primary: #1A0B2E;
+    --bg-secondary: #230E3D;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: var(--bg-primary);
+}
+section{
+    margin-top: 4rem;
+}
+.container-fluid{
+    width: 100vw;
+    padding: 0 1.6rem;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.2rem;
+}
+p{
+    font-size: 1.6rem;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+    &:hover{
+        opacity: .7;
+    }
+}
+.btn{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    padding: 1.2rem 1.6rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    &:hover{
+        opacity: .7;
+    }
+}
+
+
+/* Header Section Style CSS  */
+.header{
+    background-color: var(--bg-primary);
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .15);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+}
+.header-content .brand img{
+    height: 2rem;
+}
+.header-content .navbar{
+    display: none;
+}
+.header-content .navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.header-content .navbar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        border: .1rem solid #FFFFFF;
+    }
+}
+.header-content .subscribe{
+    display: none;
+}
+.header-content .hamburger{
+    height: 2.4rem;
+    padding: .3rem 0;
+    cursor: pointer;
+}
+.header-content .hamburger img{
+    padding: .3rem;
+    cursor: pointer;
+}
+
+/* Hero Section Style CSS  */
+.hero{
+    margin-top: 0;
+    height: 46.6rem;
+    background-image: url(../images/hero-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-container{
+    text-align: center;
+    margin: 0 2rem;
+    /* border: .1rem solid #FFFFFF; */
+}
+/* 1. Define the keyframes */
+@keyframes changeColor {
+  0% {
+    background-color: #00FF88;
+    color: #000000;
+  }
+  50% {
+    background-color: var(--bg-secondary);
+    color: #FFFFFF;
+  }
+  100% {
+    background-color: #00FF88;
+    color: #000000;
+  }
+}
+@keyframes mic-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    position: relative;
+}
+.hero-img .hero-mic{
+    width: auto;
+    height: 7rem;
+    
+    animation-name: mic-scale;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.hero-img .hero-circle, .hero-img .hero-mic{
+    position: absolute;
+}
+.hero-img .hero-badge{
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    padding: .8rem 1.6rem;
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-weight: 600;
+    border-radius: 2rem;
+
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.hero-content h1{
+    color: #FFFFFF;
+    font-weight: 800;
+    margin-top: 2.4rem;
+    margin-bottom: .8rem;
+}
+.hero-content p{
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 2.4rem;
+}
+.hero-content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+.hero-content .hero-button img{
+    width: auto;
+    height: 2rem;
+}
+.hero-content .hero-button .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    padding: 1.2rem 2rem;
+}
+.hero-content .hero-button .btn:last-child{
+    background: transparent;
+    color: #00FF88;
+    border: .2rem solid #00FF88;
+}
