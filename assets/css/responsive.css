@@ -1,4 +1,7 @@
 @media screen and (min-width: 576px) {
+    .header-content .brand img{
+        height: 3.2rem;
+    }
     .header-content .navbar{
         display: block;
     }
@@ -10,6 +13,24 @@
     }
     .hero{
         background-image: url(../images/hero-bg.png);
+        height: 76rem;
+    }
+    .hero-img{
+        width: 35rem;
+        height: 35rem;
+    }
+    .hero-img .hero-mic{
+        width: auto;
+        height: 17.5rem;
+    }
+    .hero-img .hero-badge{
+        top: 12px;
+        right: 3.2px;
+        padding: .8rem 1.8rem;
+    }
+    .hero-content h1{
+        font-size: 6rem;
+        margin-top: 4rem;
     }
 }
 @media screen and (min-width: 992px) {

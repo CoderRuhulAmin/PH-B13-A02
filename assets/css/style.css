@@ -84,6 +84,7 @@ a{
 }
 .header-content .brand img{
     height: 2rem;
+    transition: all .3s ease-in-out;
 }
 .header-content .navbar{
     display: none;
@@ -172,11 +173,13 @@ a{
     height: 20rem;
     margin: 0 auto;
     position: relative;
+    transition: all .3s ease-in-out;
 }
 .hero-img .hero-mic{
     width: auto;
     height: 7rem;
-    
+    transition: all .3s ease-in-out;
+
     animation-name: mic-scale;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -193,6 +196,7 @@ a{
     color: #1A0B2E;
     font-weight: 600;
     border-radius: 2rem;
+    transition: all .3s ease-in-out;
 
     animation-name: changeColor;
     animation-duration: 5s;
