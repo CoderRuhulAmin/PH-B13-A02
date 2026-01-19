@@ -21,6 +21,10 @@ section, footer{
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
+section .section-title{
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
 .container-fluid{
     width: 100vw;
     padding: 0 1.6rem;
@@ -50,7 +54,7 @@ p{
     font-weight: 400;
 }
 img{
-    width: 100%;
+    max-width: 100%;
 }
 a{
     text-decoration: none;
@@ -90,7 +94,7 @@ a{
     padding: 1.6rem 0;
 }
 .header-content .brand img{
-    height: 2rem;
+    max-height: 2rem;
     transition: all .3s ease-in-out;
 }
 .header-content .navbar{
@@ -281,3 +285,24 @@ a{
 }
 
 /* Services Secion Style CSS  */
+.services{
+    background-color: var(--bg-secondary);
+}
+.services .service-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+}
+.services .service-content .content-group{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 2.4rem;
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .15);
+    padding: 2.4rem;
+}
+.services .service-content .content-group img{
+    max-height: 6rem;
+    margin-bottom: 1.6rem;
+}
+.services .service-content .content-group h3{
+    margin-bottom: 1.6rem;
+}

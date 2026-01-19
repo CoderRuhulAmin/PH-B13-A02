@@ -19,7 +19,7 @@
 
     /* Header Section Style CSS  */
     .header-content .brand img{
-        height: 3.2rem;
+        max-height: 3.2rem;
     }
     .header-content .navbar{
         display: block;
@@ -64,6 +64,36 @@
         margin: 8rem 0;
     }
     
+    /* Services Secion Style CSS  */
+    .services .service-content{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3rem;
+    }
+    .services .service-content .content-01{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    .services .service-content .content-02,
+    .services .service-content .content-03{
+        grid-column: 3 / span 4;
+    }
+    .services .service-content .content-04{
+        grid-column: 1 / span 4;
+    }
+    .services .service-content .content-05{
+        grid-column: 5 / span 2;
+    }
+    .services .service-content .content-group{
+        border-radius: 4rem;
+        padding: 4rem;
+    }
+    .services .service-content .content-group img{
+        max-height: 6rem;
+    }
+    .services .service-content .content-group h3{
+        font-size: 2.4rem;
+    }
 }
 @media screen and (min-width: 992px) {
     .hero{
