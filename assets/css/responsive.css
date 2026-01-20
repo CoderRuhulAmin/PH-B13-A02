@@ -119,6 +119,30 @@
     .episodes .episode-card .episode-content p{
         margin-bottom: 1.2rem;
     }
+
+    /* Host Section Style CSS  */
+    .host .host-card{
+        justify-content: start;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 2.4rem;
+        padding: 4rem;
+        border-radius: 4rem;
+    }
+    .host .host-card .host-img{
+        text-align: center;
+        min-width: 20rem;
+        min-height: 20rem;
+    }
+    .host .host-card .host-content{
+        text-align: start;
+    }
+    .host .host-card .host-content h3{
+        font-size: 3.2rem;
+    }
+    .host .host-card .host-content ul{
+        justify-content: start;
+    }
 }
 @media screen and (min-width: 992px) {
     .hero{
