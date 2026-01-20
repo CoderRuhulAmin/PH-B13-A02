@@ -143,6 +143,19 @@
     .host .host-card .host-content ul{
         justify-content: start;
     }
+    /* Footer Section Style CSS */
+    .footer{
+        background-image: url(../images/footer-bg.png);
+    }
+    .footer img{
+        width: auto;
+        height: 6rem;
+        margin-bottom: 3.2rem;
+    }
+    .footer .social ul{
+        gap: 4rem;
+        margin-bottom: 3.2rem;
+    }
 }
 @media screen and (min-width: 992px) {
     .hero{

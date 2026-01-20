@@ -405,3 +405,44 @@ a{
     width: 2rem;
     height: 2rem;
 }
+
+/* Footer Section Style CSS */
+.footer{
+    background-color: var(--bg-secondary);
+    background-image: url(../images/footer-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer img{
+    width: auto;
+    height: 3.2rem;
+    margin-bottom: 2.4rem;
+}
+.footer .row{
+    text-align: center;
+}
+.footer .social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+.footer .social ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+.footer .social ul li a img{
+    width: auto;
+    height: 2.4rem;
+    margin: 0;
+}
+.footer .social ul li a span{
+    font-weight: 600;
+}
