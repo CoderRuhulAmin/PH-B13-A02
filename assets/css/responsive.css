@@ -3,6 +3,9 @@
         padding-top: 12rem;
         padding-bottom: 12rem;
     }
+    section .section-title{
+        margin-bottom: 4rem;
+    }
     h1{
         font-size: 6rem;
     }
@@ -93,6 +96,28 @@
     }
     .services .service-content .content-group h3{
         font-size: 2.4rem;
+    }
+
+    /* Featured Episodes Section Style CSS  */
+    .episodes .episode-container{
+        gap: 3rem;
+    }
+    .episodes .episode-card{
+        border-radius: 2.4rem;
+    }
+    .episodes .episode-card iframe{
+        border-top-left-radius: 2.4rem;
+        border-top-right-radius: 2.4rem;
+    }
+    .episodes .episode-card .episode-content{
+        padding: 2.4rem;
+    }
+    .episodes .episode-card .episode-content h4{
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+    }
+    .episodes .episode-card .episode-content p{
+        margin-bottom: 1.2rem;
     }
 }
 @media screen and (min-width: 992px) {
